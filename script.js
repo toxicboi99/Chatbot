@@ -3,7 +3,7 @@ const chatContainer = document.querySelector(".chat-container");
 const sendBtn = document.querySelector("#submit");
 const imageBtn = document.querySelector("#image");
 const imageInput = document.querySelector("#imageInput");
-
+const API_URL = "https://chatbot-4iy2.onrender.com";
 let selectedBase64 = null;
 
 // ---------------- IMAGE PICK ----------------
@@ -137,3 +137,4 @@ function handleCredentialResponse(response){
 
   addAI("Hello " + data.name + " 👋 How can I help you?");
 }
+
